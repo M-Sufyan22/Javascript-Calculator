@@ -10,46 +10,39 @@
 
 <body>
 
+
     <div class="container">
         <h1>JavaScript-Calculator</h1>
-        <div class="calculator">
-            <table>
-                <tr>
-                    <td colspan="3"><input type="number" id="result" /></td>
-                    <!-- clr() function will call clr to clear all value -->
-                    <td><input type="button" value="c" onclick="clr()" /> </td>
-                </tr>
-                <tr>
-                    <!-- create button and assign value to each button -->
-                    <!-- dis("1") will call function dis to display value -->
-                    <td><input type="button" value="1" onclick="dis('1')" /></td>
-                    <td><input type="button" value="2" onclick="dis('2')" /></td>
-                    <td><input type="button" value="3" onclick="dis('3')" /></td>
-                    <td><input type="button" value="/" onclick="dis('/')" /></td>
-                </tr>
-                <tr>
-                    <td><input type="button" value="4" onclick="dis('4')" /> </td>
-                    <td><input type="button" value="5" onclick="dis('5')" /> </td>
-                    <td><input type="button" value="6" onclick="dis('6')" /> </td>
-                    <td><input type="button" value="-" onclick="dis('-')" /> </td>
-                </tr>
-                <tr>
-                    <td><input type="button" value="7" onclick="dis('7')" /> </td>
-                    <td><input type="button" value="8" onclick="dis('8')" /> </td>
-                    <td><input type="button" value="9" onclick="dis('9')" /> </td>
-                    <td><input type="button" value="+" onclick="dis('+')" /> </td>
-                </tr>
-                <tr>
-                    <td><input type="button" value="." onclick="dis('.')" /> </td>
-                    <td><input type="button" value="0" onclick="dis('0')" /> </td>
-                    <!-- solve function call function solve to evaluate value -->
-                    <td><input type="button" value="=" onclick="solve()" /> </td>
-                    <td><input type="button" value="*" onclick="dis('*')" /> </td>
-                </tr>
-            </table>
-        </div>
+        <form action="">
+            <div class="top-sec">
+                <input id="result" type="number">
+            </div>
+            <div class="bottom-sec">
+
+                <input type="button" value="7" onclick="getnums('7')">
+                <input type="button" value="8" onclick="getnums('8')">
+                <input type="button" value="9" onclick="getnums('9')">
+                <input type="button" id="red" onclick="clearall()" value="C">
+
+                <input type="button" value="4" onclick="getnums('4')">
+                <input type="button" value="5" onclick="getnums('5')">
+                <input type="button" value="6" onclick="getnums('6')">
+                <input type="button" value="X" onclick="getnums('*')">
+
+                <input type="button" value="1" onclick="getnums('1')">
+                <input type="button" value="2" onclick="getnums('2')">
+                <input type="button" value="3" onclick="getnums('3')">
+                <input type="button" value="-" onclick="getnums('-')">
+
+                <input type="button" value="0" onclick="getnums('0')">
+                <input type="button" value="." onclick="getnums('.')">
+                <input type="button" value="=" onclick="getnums('=')">
+                <input type="button" value="+" onclick="getnums('+')">
+            </div>
+        </form>
     </div>
-    <script src="app.js"></script>
+
 </body>
+<script src="app.js"></script>
 
 </html>
