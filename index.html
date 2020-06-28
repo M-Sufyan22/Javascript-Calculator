@@ -16,7 +16,7 @@
         <h1>JavaScript Calculator</h1>
         <form action="">
             <div class="top-sec">
-                <input id="result" readonly type="text">
+                <input value="0" id="result" readonly type="text">
             </div>
             <div class="bottom-sec">
 
@@ -28,17 +28,23 @@
                 <input type="button" value="4" onclick="getnums('4')">
                 <input type="button" value="5" onclick="getnums('5')">
                 <input type="button" value="6" onclick="getnums('6')">
-                <input type="button" value="X" onclick="getnums('*')">
+                <input type="button" value="Del" onclick="deleteone()">
 
                 <input type="button" value="1" onclick="getnums('1')">
                 <input type="button" value="2" onclick="getnums('2')">
                 <input type="button" value="3" onclick="getnums('3')">
-                <input type="button" value="-" onclick="getnums('-')">
+                <input type="button" value="X" onclick="getnums('*')">
 
-                <input type="button" value="0" onclick="getnums('0')">
                 <input type="button" value="." onclick="getnums('.')">
+                <input type="button" value="0" onclick="getnums('0')">
                 <input type="button" value="=" onclick="solve()">
                 <input type="button" value="+" onclick="getnums('+')">
+
+                <input type="button" value="-" onclick="getnums('-')">
+                <input type="button" value="/" onclick="getnums('/')">
+                <input type="button" value="(" onclick="getnums('(')">
+                <input type="button" value=")" onclick="getnums(')')">
+
             </div>
         </form>
     </div>
